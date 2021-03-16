@@ -2,24 +2,19 @@
 public class Estudiante {
 	
 	private String nombre;
-	private String Apellidos;
+	private String apellidos;
 	private String fecha_nacimiento;
 	private String DNI;
 	private String estudios;
 	private String telefono;
 	
-	public Estudiante() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	public Estudiante() {}
 
-	public Estudiante(String nombre, String apellidos, String fecha_nacimiento, String dNI, String estudios,
-			String telefono) {
-		super();
+	public Estudiante(String nombre, String apellidos, String fecha_nacimiento, String dNI, String estudios, String telefono) {
 		this.nombre = nombre;
-		Apellidos = apellidos;
+		this.apellidos = apellidos;
 		this.fecha_nacimiento = fecha_nacimiento;
-		DNI = dNI;
+		this.DNI = dNI;
 		this.estudios = estudios;
 		this.telefono = telefono;
 	}
@@ -33,11 +28,11 @@ public class Estudiante {
 	}
 
 	public String getApellidos() {
-		return Apellidos;
+		return apellidos;
 	}
 
 	public void setApellidos(String apellidos) {
-		Apellidos = apellidos;
+		this.apellidos = apellidos;
 	}
 
 	public String getFecha_nacimiento() {
@@ -53,7 +48,7 @@ public class Estudiante {
 	}
 
 	public void setDNI(String dNI) {
-		DNI = dNI;
+		this.DNI = dNI;
 	}
 
 	public String getEstudios() {
@@ -74,7 +69,7 @@ public class Estudiante {
 
 	@Override
 	public String toString() {
-		return "Estudiante [nombre=" + nombre + ", Apellidos=" + Apellidos + ", fecha_nacimiento=" + fecha_nacimiento
+		return "Estudiante [nombre=" + nombre + ", Apellidos=" + apellidos + ", fecha_nacimiento=" + fecha_nacimiento
 				+ ", DNI=" + DNI + ", estudios=" + estudios + ", telefono=" + telefono + "]";
 	}
 }

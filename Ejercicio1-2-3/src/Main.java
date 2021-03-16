@@ -6,7 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		String nom="",nom1="",nom2="",nom3="",nom4="",nom5="";
 		int opc=0;
-		ArrayList<String> estudiantes = new ArrayList<String>();
+		ArrayList<Estudiante> estudiantes = new ArrayList<Estudiante>();
 		Scanner sc = new Scanner(System.in);
 		Scanner sn = new Scanner(System.in);
 
@@ -26,13 +26,8 @@ public class Main {
 			System.out.println("Introduzca su teléfono: ");
 			nom5=sc.nextLine();
 			
-			estudiantes.add(nom);
-			estudiantes.add(nom1);
-			estudiantes.add(nom2);
-			estudiantes.add(nom3);
-			estudiantes.add(nom4);
-			estudiantes.add(nom5);
-			
+			Estudiante estu= new Estudiante(nom,nom1,nom2,nom3,nom4,nom5);
+			estudiantes.add(estu);
 		}
 	}
 }
